@@ -1,0 +1,144 @@
+body {
+    background-image: linear-gradient(#2cc1d3, #1f00ff);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800px;
+    width: 1200px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+hr {
+    width: 100%;
+}
+
+#articles {
+    background: rgba(0, 0, 0, 0.700);
+    border: 3px solid yellow;
+    font-weight: 40px;
+    padding: 5px 10px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+#about_me {
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+/* images */
+
+#main-pic {
+    width: 13%;
+    height: 13%;
+    border-radius: 200px;
+    margin-top: 15px;
+}
+
+.pic {
+    width: 20%;
+    height: 20%;
+}
+
+.flex-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+#fun-facts {
+    margin: auto;
+}
+
+#slides {
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.image {
+    display: none;
+}
+
+#prev {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    top: 43%;
+    left: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#prev:hover, #next:hover {
+    background-color: black;
+}
+
+#dots {
+    text-align: center;
+    margin: 2%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #757575;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #fdfefd;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#slide-title {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.700)
+}

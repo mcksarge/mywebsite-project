@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!--Header-->
+
+    <div id="header">
+      <h1>Shane Higgins</h1>
+      <h2>Veteran, IT Guy, Student</h2>
+    </div>
+
+    <!--About Me-->
+
+    <div id="articles">
+      <div id="about_me">
+        <img src="images/me.jpg" id="main-pic">
+        <p>Name: Shane Higgins</p>
+        <p>Location: Reno, Nevada</p>
+        <p>Profession: IT Technician, Web Development Student</p>
+      </div>
+
+      <hr>
+
+      <!--Article-->
+
+      <article id="first_paragraph">
+        <h2><u>About Me</u></h2>
+        <p>After graduating high school in the summer of 2009, I joined the <span id="usmc">United States Marine Corps</span> where I served as a <span id="usmc_mos">data network specialist</span>. This jump started my career into technology, where I learned building and managing servers, networking, information security, and much more.</p>
+        <p>After leaving the Marines in 2014, I briefly attended <em><strong>Academy of Arts University</strong></em> where I studied Game Design, mainly working with JavaScript in the Unity engine, as well as 3D modeling, story writing, and some art classes. I stopped attending shortly after I started working as a <em><strong>systems support technician</strong></em>, where I continued my previous career in technology, working with back end systems and supporting users.</p>
+      </article>
+
+      <!--Flex Images-->
+
+      <div class="flex-imgs">
+        <img src="images/marines2.jpg" class="pic">
+        <img src="images/marines.jpg" class="pic">
+        <img src="images/marines3.jpg" class="pic">
+      </div>
+
+      <!--Article-->
+
+      <article id="second_paragraph">
+        <p>As much as I loved my job, I felt like I wasn't being my best self. There was a creative side of me that I wanted to tap into, however, working in IT, you don't get many oppurtunities to be creative. Every now and then I'd get to do some coding, or build a layout with HTML to make it easier for our technicians and users to read and understand what the details were on tickets that were emailed to them. I loved that I was able to use logical thinking while also creatively playing with ways to make everything look pleasing to the eye.</p>
+        <p>It wasn't until 2021 that I decided to take that first step, and truly make a change in my life. As scary as it can be to do a career change, I felt like it was necessary in order to improve my quality of life as well as leave my mark on the internet, and express myself creatively.</p>
+        <p>I started with <em><strong>Codecademy</strong></em>, learning front-end development, building websites and learning HTML & CSS. A few months after that, I applied to <em><strong>Flatiron School</strong></em>, where I could really commit to my career change for once, take control of my life and see how far I can really go.</p>
+      </article>
+
+      <!--Flex Images-->
+
+      <div class="flex-imgs" id="current-pic">
+        <img src="images/painting.jpg" class="pic">
+        <img src="images/bike.jpg" class="pic">
+        <img src="images/dog.jpg" class="pic">
+      </div>
+
+      <hr>
+
+      <!--Article-->
+
+      <article id="fun-facts">
+          <h2><u>Fun Facts</u></h2>
+        <ul>
+          <li>- I was born in Oahu, Hawaii</li>
+          <li>- In my time in the military, I traveled to Afghanistan, Australia, Okinawa, and Hong Kong</li>
+          <li>- I have 3 dogs</li>
+          <li>- I enjoy occasionaly painting or drawing</li>
+        </ul>
+
+      </article>
+    </div>
+
+    <h2 id="slide-title">Scenes From My Life</h2>
+    <div id="slides">
+      <div class="image fade">
+        <img src="images/image carousel/img1.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img2.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img3.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img4.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img5.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img6.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img7.jpg" alt="Pictures from my life" width="100%">
+      </div>
+      <div class="image fade">
+        <img src="images/image carousel/img8.jpg" alt="Pictures from my life" width="100%">
+      </div>
+
+
+      <i id="prev" onclick= show_image(-1) class="fas fa-chevron-left"></i>
+      <i id="next" onclick= show_image(1) class="fas fa-chevron-right"></i>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
